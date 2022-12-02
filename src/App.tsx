@@ -1,25 +1,46 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './Components/View/Navbar/Navbar';
+import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { dark } from './Theme/Theme';
+import Home from './Components/Page/Home/Home';
+import ErrorPage from './Components/Page/Error/ErrorPage';
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: ${dark.textFont};
+    color:${dark.color};
+    background-color: ${dark.mainDarkColor};
+  };
+  a {
+    text-decoration: none;
+  }
+`;
+
+const Container = styled.div`
+  margin: 0 10rem 0 10rem;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={dark}>
+      <GlobalStyle />
+      <Router>
+        <Navbar />
+        <Container>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/products" />
+            <Route path="/contact" />
+            <Route path="/about" />
+            <Route path="*" element={<ErrorPage />} />
+          </Routes>
+        </Container>
+      </Router>
+    </ThemeProvider>
   );
 }
 
