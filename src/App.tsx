@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { dark } from './Theme/Theme';
 import Home from './Components/Page/Home/Home';
 import ErrorPage from './Components/Page/Error/ErrorPage';
+import InBuild from './Components/Page/InBuild/InBuild';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -33,7 +34,7 @@ function App() {
         <Container>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/products" />
+            <Route path="/projects" element={<InBuild/>}/>
             <Route path="/contact" />
             <Route path="/about" />
             <Route path="*" element={<ErrorPage />} />

@@ -7,6 +7,7 @@ const Container = styled.div`
   text-align: center;
 `;
 const Boxes = styled.div`
+  position: relative;
   flex-basis: 48%;
   border-radius: 8rem;
   background-color: ${({ theme }) => theme.mainColor};
@@ -18,32 +19,34 @@ const Title = styled.h3`
 
 const List = styled.ul`
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   font-family: ${({ theme }) => theme.textFontSansserif};
 `;
 const Line = styled.div`
   list-style: none;
+  justify-content: center;
   padding: 0.7rem;
   font-family: ${({ theme }) => theme.textFontSansserif};
 `;
-// const Text = styled.p``;
+
 const Informations: React.FC = () => {
   const workingOn: string =
-    'Post website abour games with dynamic user interaction';
+    'Dynamic website for training and examinations';
 
   return (
     <Container>
       <Boxes>
-        <Title>Technologies I work with</Title>
+        <Title>Currently I working on</Title>
+        <Line>{workingOn}</Line>
+      </Boxes>
+      <Boxes>
+        <Title>Technologies I work in</Title>
         <List>
           {Technologies.map((x) => {
             return <Line key={x}>{x}</Line>;
           })}
         </List>
-      </Boxes>
-      <Boxes>
-        <Title>Currently working on</Title>
-        <Line>{workingOn}</Line>
       </Boxes>
     </Container>
   );

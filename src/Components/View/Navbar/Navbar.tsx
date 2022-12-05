@@ -48,7 +48,8 @@ const NavbarLogoLink = styled(NavLink)`
 `;
 
 const NavabrExtendedContainer = styled.div``;
-const Navbar = () => {
+
+const Navbar: React.FC = () => {
   return (
     <NavContainer>
       <NavabrInnerContainer>

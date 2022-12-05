@@ -5,7 +5,7 @@ const Title = styled.h2`
   padding: ${({ theme }) => theme.baseSize * 3};
   font-size: 4rem;
   text-align: center;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-family: 'Times New Roman', Times, serif;
 `;
 

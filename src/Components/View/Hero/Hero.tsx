@@ -1,3 +1,4 @@
+import { title } from 'process';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -16,11 +17,16 @@ const Text = styled.p`
   font-size: 1.25rem;
   font-family: ${({ theme }) => theme.textFontSansserif};
 `;
-const Hero: React.FC = () => {
+
+interface Props{
+  title: string,
+  text: string
+}
+const Hero: React.FC<Props> = ({title, text}) => {
   return (
     <Container>
-      <Title>Welcome to websie of Filip Łysiak</Title>
-      <Text>I invite you to see the informations about my job and me!</Text>
+      <Title>{title}</Title>
+      <Text>{text}</Text>
     </Container>
   );
 };

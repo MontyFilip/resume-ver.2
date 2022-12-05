@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Hero from '../../View/Hero/Hero';
 import Informations from '../../View/Informations/Informations';
+import { HomePage } from '../../../DB/data';
 
 const Box = styled.div`
   display: flex;
@@ -13,10 +14,12 @@ const Box = styled.div`
   animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 `;
 
+
+
 const Home: React.FC = () => {
   return (
     <Box>
-      <Hero/>
+      <Hero title={HomePage.title} text={HomePage.text}/>
       <Informations/>
     </Box>
   );
