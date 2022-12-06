@@ -21,28 +21,36 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const Container = styled.div`
-  margin: 0 10rem 0 10rem;
+const MainContainer = styled.div`
+  max-width: 1140px;
+  margin: 0 auto;
+  box-shadow: ${({ theme }) => theme.boxShadowAll};
+  padding: 1rem 3rem 3rem 3rem;
+  border-radius: 0 0 2rem 2rem;
 `;
 
-function App() {
+// const Container = styled.div`
+//   margin: 0 10rem 0 10rem;
+// `;
+
+const App = () => {
   return (
     <ThemeProvider theme={dark}>
       <GlobalStyle />
-      <Router>
-        <Navbar />
-        <Container>
+      <MainContainer>
+        <Router>
+          <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<InBuild/>}/>
-            <Route path="/contact" />
-            <Route path="/about" />
+            <Route path="/projects" element={<InBuild />} />
+            <Route path="/contact" element={<InBuild />} />
+            <Route path="/about" element={<InBuild />} />
             <Route path="*" element={<ErrorPage />} />
           </Routes>
-        </Container>
-      </Router>
+        </Router>
+      </MainContainer>
     </ThemeProvider>
   );
-}
+};
 
 export default App;

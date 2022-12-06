@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Hero from '../../View/Hero/Hero';
 import Informations from '../../View/Informations/Informations';
 import { HomePage } from '../../../DB/data';
+import { WorkingOn } from '../../../DB/data';
 
 const Box = styled.div`
   display: flex;
@@ -20,7 +21,7 @@ const Home: React.FC = () => {
   return (
     <Box>
       <Hero title={HomePage.title} text={HomePage.text}/>
-      <Informations/>
+      <Informations text={WorkingOn}/>
     </Box>
   );
 };

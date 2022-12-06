@@ -5,24 +5,24 @@ import { NavLink } from 'react-router-dom';
 const NavContainer = styled.nav`
   width: 100%;
   height: 80px;
-  background-color: black;
+  /* background-color: black; */
   display: flex;
   flex-direction: column;
-  border-bottom: ${({ theme }) => theme.mainColor} solid 0.1px;
+  border-bottom: black solid 0.1px;
 `;
 
 const LeftContainer = styled.div`
-  flex: 80%;
+  flex: 50%;
   display: flex;
   align-items: center;
-  padding-left: 5%;
+  /* padding-left: 5%; */
 `;
 
 const RightContainer = styled.div`
-  flex: 20%;
+  /* flex: 50%; */
   display: flex;
   align-items: center;
-  padding-left: 5%;
+  /* padding-left: 5%; */
 `;
 const NavabrInnerContainer = styled.div`
   width: 100%;
@@ -34,10 +34,14 @@ const NavbarLinkContainer = styled.div`
 `;
 const NavbarLink = styled(NavLink)`
   color: white;
-  font-size: x-large;
+  font-size: 2rem;
   font-family: ${({ theme }) => theme.headerFont};
   text-decoration: none;
-  margin: 3rem;
+  margin: 2rem;
+  &:hover {
+    color: black;
+    transition: ${({ theme }) => theme.transitionTime};
+  }
 `;
 const NavbarLogoLink = styled(NavLink)`
   color: ${({ theme }) => theme.mainColor};
@@ -45,6 +49,10 @@ const NavbarLogoLink = styled(NavLink)`
   font-family: ${({ theme }) => theme.logoFont};
   text-decoration: none;
   margin: 3rem;
+  &:hover {
+    color: black;
+    transition: ${({ theme }) => theme.transitionTime};
+  }
 `;
 
 const NavabrExtendedContainer = styled.div``;

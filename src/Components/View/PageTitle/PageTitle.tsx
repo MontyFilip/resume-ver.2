@@ -3,10 +3,10 @@ import styled from 'styled-components';
 
 const Title = styled.h2`
   padding: ${({ theme }) => theme.baseSize * 3};
-  font-size: 4rem;
+  /* font-size: 4rem; */
   text-align: center;
   /* text-transform: uppercase; */
-  font-family: 'Times New Roman', Times, serif;
+  /* font-family: 'Times New Roman', Times, serif; */
 `;
 
 type Props = {

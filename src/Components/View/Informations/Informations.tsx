@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Technologies } from '../../../DB/data';
+
 const Container = styled.div`
   display: flex;
   flex-direction: row;
@@ -14,7 +15,7 @@ const Boxes = styled.div`
 `;
 const Title = styled.h3`
   font-family: ${({ theme }) => theme.headerFont};
-  font-size: 2rem;
+  font-size: 1.7rem;
 `;
 
 const List = styled.ul`
@@ -28,17 +29,21 @@ const Line = styled.div`
   justify-content: center;
   padding: 0.7rem;
   font-family: ${({ theme }) => theme.textFontSansserif};
+
 `;
 
-const Informations: React.FC = () => {
-  const workingOn: string =
-    'Dynamic website for training and examinations';
+interface Props {
+  text: string
+}
+
+const Informations: React.FC<Props> = ({text}) => {
+
 
   return (
     <Container>
       <Boxes>
         <Title>Currently I working on</Title>
-        <Line>{workingOn}</Line>
+        <Line>{text}</Line>
       </Boxes>
       <Boxes>
         <Title>Technologies I work in</Title>
