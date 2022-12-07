@@ -7,6 +7,7 @@ import { dark } from './Theme/Theme';
 import Home from './Components/Page/Home/Home';
 import ErrorPage from './Components/Page/Error/ErrorPage';
 import InBuild from './Components/Page/InBuild/InBuild';
+import Contact from './Components/Page/Contact/Contact';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -42,9 +43,9 @@ const App = () => {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<InBuild />} />
-            <Route path="/contact" element={<InBuild />} />
             <Route path="/about" element={<InBuild />} />
+            <Route path="/projects" element={<InBuild />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<ErrorPage />} />
           </Routes>
         </Router>

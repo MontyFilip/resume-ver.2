@@ -5,7 +5,7 @@ import Informations from '../../View/Informations/Informations';
 import { HomePage } from '../../../DB/data';
 import { WorkingOn } from '../../../DB/data';
 
-const Box = styled.div`
+export const Box = styled.div`
   display: flex;
   flex-direction: column;
   z-index: -1;

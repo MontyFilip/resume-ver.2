@@ -19,15 +19,19 @@ const Text = styled.p`
   font-family: ${({ theme }) => theme.textFontSansserif};
 `;
 
-interface Props{
-  title: string,
-  text: string
+interface Props {
+  title: string;
+  text: string;
+  text2?: string;
+  text3?: string;
 }
-const Hero: React.FC<Props> = ({title, text}) => {
+const Hero: React.FC<Props> = ({ title, text, text2, text3 }) => {
   return (
     <Container>
       <Title>{title}</Title>
       <Text>{text}</Text>
+      {text2 === undefined ? undefined : <Text>{text2}</Text>}
+      {text3 === undefined ? undefined : <Text>{text3}</Text>}
     </Container>
   );
 };

@@ -43,6 +43,7 @@ const NavbarLink = styled(NavLink)`
     transition: ${({ theme }) => theme.transitionTime};
   }
 `;
+
 const NavbarLogoLink = styled(NavLink)`
   color: ${({ theme }) => theme.mainColor};
   font-size: 3rem;
@@ -56,7 +57,6 @@ const NavbarLogoLink = styled(NavLink)`
 `;
 
 const NavabrExtendedContainer = styled.div``;
-
 const Navbar: React.FC = () => {
   return (
     <NavContainer>
