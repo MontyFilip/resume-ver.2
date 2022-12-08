@@ -14,7 +14,44 @@ export const HomePage = {
 
 
 export const ContactData = {
-  title:'Witajcie w mojej kuchni',
+  title:"If you have questions, don't hesitate. Write to me.",
   mail: 'mail: filip.lysiak.t1@gmail.com',
   phone: 'phone: +48 506 931 139',
 };
+
+export const MyProjects = [
+  {
+    title: '24farmer.eu', 
+    shortDescription: 'Application for farm management', 
+    image: 'photo.png',
+    ghLink: 'https://github.com/MontyFilip/password_generator_cmd'
+  },
+  {
+    title: 'Trainig application', 
+    shortDescription: 'costam', 
+    image: 'photo2.png',
+    ghLink: 'https://github.com/MontyFilip/password_generator_cmd'
+  },
+  {
+    title: 'Password generator - console', 
+    shortDescription: "I'm working about web password generator", 
+    image: 'photo.png',
+    ghLink: 'https://github.com/MontyFilip/password_generator_cmd'
+  },
+]
+
+export const PersonalInformation = [
+  {
+    type: 'text',
+    title: 'My Story',
+    description: 'Hello World'
+  },
+  {
+    type: 'list',
+    title: 'My Hobby',
+    // description = [
+    //   'Games', 
+    //   'IT'
+    // ]
+  }
+]
