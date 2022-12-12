@@ -26,14 +26,14 @@ export const MyProjects = [
     ghLink: 'https://github.com/MontyFilip/24farmer.eu',
   },
   {
-    title: 'Trainig application',
+    title: 'Training application',
     shortDescription: 'costam',
     image: 'photo2.png',
   },
   {
     title: 'Password generator - console',
     shortDescription: "I'm working about web password generator",
-    image: 'photo.png',
+    image: 'pass_gen_cmd.png',
     ghLink: 'https://github.com/MontyFilip/password_generator_cmd'
   },
 ];

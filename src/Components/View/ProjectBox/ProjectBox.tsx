@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Box = styled.a`
   flex-basis: 45%;
+  /* height: 22rem; */
   margin: 1rem;
   text-decoration: none;
   /* background-color: ${({ theme }) => theme.mainColor}; */
@@ -29,13 +29,6 @@ const Text = styled.p`
   font-size: 1.2rem;
 `;
 
-const More = styled.a`
-  text-decoration: underline;
-  color: ${({ theme }) => theme.color};
-  font-size: 1rem;
-  cursor: pointer;
-`;
-
 interface Props {
   title: string;
   shortDescription: string;
@@ -57,13 +50,6 @@ const ProjectBox: React.FC<Props> = ({
       />
       <Title>{title}</Title>
       <Text>{shortDescription}</Text>
-      {/* <More>Show more...</More> */}
-      {/* {ghLink === undefined ? undefined : (
-        // <More href={ghLink} target="_blank">
-        //   Show GitHUB
-        // </More>
-      // )
-      } */}
     </Box>
   );
 };
