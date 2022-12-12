@@ -15,7 +15,7 @@ const Container = styled.div`
 
 const Projects: React.FC = () => {
   return <Container>
-    {MyProjects.map(project => (<ProjectBox title={project.title} shortDescription={project.shortDescription} image={project.image}/>))}
+    {MyProjects.map(project => (<ProjectBox title={project.title} shortDescription={project.shortDescription} image={project.image} ghLink={project.ghLink}/>))}
   </Container>;
 };
 

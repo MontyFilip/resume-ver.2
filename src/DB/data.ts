@@ -12,46 +12,44 @@ export const HomePage = {
   text: 'I invite you to see the informations about my job and me!',
 };
 
-
 export const ContactData = {
-  title:"If you have questions, don't hesitate. Write to me.",
+  title: "If you have questions, don't hesitate, write to me.",
   mail: 'mail: filip.lysiak.t1@gmail.com',
   phone: 'phone: +48 506 931 139',
 };
 
 export const MyProjects = [
   {
-    title: '24farmer.eu', 
-    shortDescription: 'Application for farm management', 
+    title: '24farmer.eu',
+    shortDescription: 'Application for farm management',
     image: 'photo.png',
-    ghLink: 'https://github.com/MontyFilip/password_generator_cmd'
+    ghLink: 'https://github.com/MontyFilip/24farmer.eu',
   },
   {
-    title: 'Trainig application', 
-    shortDescription: 'costam', 
+    title: 'Trainig application',
+    shortDescription: 'costam',
     image: 'photo2.png',
-    ghLink: 'https://github.com/MontyFilip/password_generator_cmd'
   },
   {
-    title: 'Password generator - console', 
-    shortDescription: "I'm working about web password generator", 
+    title: 'Password generator - console',
+    shortDescription: "I'm working about web password generator",
     image: 'photo.png',
     ghLink: 'https://github.com/MontyFilip/password_generator_cmd'
   },
-]
+];
 
 export const PersonalInformation = [
   {
     type: 'text',
     title: 'My Story',
-    description: 'Hello World'
+    description: 'Hello World',
   },
   {
     type: 'list',
     title: 'My Hobby',
     // description = [
-    //   'Games', 
+    //   'Games',
     //   'IT'
     // ]
-  }
-]
+  },
+];
