@@ -36,6 +36,11 @@ export const MyProjects = [
     image: 'pass_gen_cmd.png',
     ghLink: 'https://github.com/MontyFilip/password_generator_cmd'
   },
+  {
+    title: 'Personalize software to data analyze',
+    shortDescription: 'Życzę wszyskim powodzenia',
+    image: 'photo.png'
+  }
 ];
 
 export const PersonalInformation = [

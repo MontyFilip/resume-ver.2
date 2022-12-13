@@ -21,6 +21,7 @@ const Img = styled.img`
   /* cursor: pointer; */
 `;
 const Title = styled.h2`
+  font-size: 1.5rem;
   color: ${({ theme }) => theme.color};
   font-family: ${({ theme }) => theme.textFontSansserif};
 `;
