@@ -33,7 +33,7 @@ const NavbarLinkContainer = styled.div`
   display: flex;
 `;
 const NavbarLink = styled(NavLink)`
-  color: white;
+  color: ${({ theme }) => theme.color};
   font-size: 2rem;
   font-family: ${({ theme }) => theme.headerFont};
   text-decoration: none;
@@ -63,7 +63,7 @@ const Navbar: React.FC = () => {
       <NavabrInnerContainer>
         <LeftContainer>
           <NavbarLinkContainer>
-            <NavbarLink to="/">Home</NavbarLink>
+            {/* <NavbarLink to="/">Home</NavbarLink> */}
             <NavbarLink to="/about">About</NavbarLink>
             <NavbarLink to="/projects">Projects</NavbarLink>
             <NavbarLink to="/contact">Contact</NavbarLink>
