@@ -1,5 +1,5 @@
 import React from 'react';
-import Hero from '../../View/Hero/Hero';
+import Hero from '../../View/Banner/Banner';
 import { Box } from '../Home/Home';
 import { ContactData } from '../../../DB/data';
 
