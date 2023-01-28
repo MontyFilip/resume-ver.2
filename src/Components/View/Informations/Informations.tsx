@@ -29,16 +29,13 @@ const Line = styled.div`
   justify-content: center;
   padding: 0.7rem;
   font-family: ${({ theme }) => theme.textFontSansserif};
-
 `;
 
 interface Props {
-  text: string
+  text: string;
 }
 
-const Informations: React.FC<Props> = ({text}) => {
-
-
+const Informations: React.FC<Props> = ({ text }) => {
   return (
     <Container>
       <Boxes>
