@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import px2vw from '../../../Theme/Utils';
 
 const Box = styled.a`
   flex-basis: 45%;
@@ -15,10 +16,14 @@ const Box = styled.a`
 const Img = styled.img`
   /* 500px x 270px */
   width: 100%;
-  height: 70%;
+  height: 65%;
   object-fit: unset;
   border-radius: 3rem 3rem 1rem 1rem;
   /* cursor: pointer; */
+  @media (min-width: 768px){
+    /* width: ${px2vw(320, 768)}; */
+  }
+  @media (max-width: 648px){}
 `;
 const Title = styled.h2`
   font-size: 1.5rem;
@@ -28,6 +33,7 @@ const Title = styled.h2`
 const Text = styled.p`
   color: ${({ theme }) => theme.color};
   font-size: 1.2rem;
+  /* padding: 0 1rem 1rem 1rem; */
 `;
 
 interface Props {

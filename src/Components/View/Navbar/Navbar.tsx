@@ -9,6 +9,12 @@ const NavContainer = styled.nav`
   display: flex;
   flex-direction: column;
   border-bottom: black solid 0.1px;
+  @media (max-width: 640px){
+    /* position: relative; */
+  }
+  @media (max-width: 500px){
+    
+  }
 `;
 
 const LeftContainer = styled.div`
@@ -42,6 +48,13 @@ const NavbarLink = styled(NavLink)`
     color: black;
     transition: ${({ theme }) => theme.transitionTime};
   }
+  @media (max-width: 850px){
+    margin: 1rem;
+  }
+  @media (max-width: 648px){
+    font-size: 1.8rem;
+    margin: 0.5rem;
+  }
 `;
 
 const NavbarLogoLink = styled(NavLink)`
@@ -53,6 +66,14 @@ const NavbarLogoLink = styled(NavLink)`
   &:hover {
     color: black;
     transition: ${({ theme }) => theme.transitionTime};
+  }
+  @media (max-width: 850px){
+    font-size: 2.7rem;
+    margin: 2rem;
+  }
+  @media (max-width: 648px){
+    font-size: 2.3rem;
+    margin: 1rem;
   }
 `;
 

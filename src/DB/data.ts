@@ -2,19 +2,20 @@ export const Technologies = [
   'HTML',
   'CSS(styled-components)',
   'ReactJS',
+  'TypeScript/JavaScript',
   'Python',
   'SQL/MongoDB',
 ];
 export const WorkingOn = 'Dynamic website for training and examinations';
 
 export const HomePage = {
-  title: 'Welcome to websie of Filip Łysiak',
+  title: 'Welcome to portfolio websie of Filip Łysiak',
   text: 'I invite you to see the informations about my job and me!',
 };
 
 export const ContactData = {
-  title: "If you have questions, don't hesitate, write to me.",
-  mail: 'mail: filip.lysiak.t1@gmail.com',
+  title: "If you have questions, don't hesitate, please contact with me.",
+  mail: 'mail: contact@filiplysiak.com',
   phone: 'phone: +48 506 931 139',
 };
 
@@ -27,7 +28,7 @@ export const MyProjects = [
   },
   {
     title: 'Training application',
-    shortDescription: 'costam',
+    shortDescription: 'Generic application for companies to preapre courses for employees [H&S, Instructions]',
     image: 'photo2.png',
   },
   {
@@ -38,12 +39,7 @@ export const MyProjects = [
   },
   {
     title: 'Personalize software to data analyze',
-    shortDescription: 'Życzę wszyskim powodzenia',
-    image: 'photo.png',
-  },
-  {
-    title: 'Personalize software to data analyze',
-    shortDescription: 'Życzę wszyskim powodzenia',
+    shortDescription: 'We can prepare personalize software to your company. ',
     image: 'photo.png',
   },
 ];
