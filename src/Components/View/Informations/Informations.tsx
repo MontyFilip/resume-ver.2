@@ -6,12 +6,19 @@ const Container = styled.div`
   flex-direction: row;
   justify-content: space-between;
   text-align: center;
+  @media (max-width: 648px){
+    flex-direction: column;
+  }
 `;
 const Boxes = styled.div`
   position: relative;
   flex-basis: 48%;
   border-radius: 8rem;
   background-color: ${({ theme }) => theme.mainColor};
+  @media (max-width: 648px){
+    border-radius: 3rem;
+    margin-bottom: 2rem;
+  }
 `;
 const Title = styled.h3`
   font-family: ${({ theme }) => theme.headerFont};

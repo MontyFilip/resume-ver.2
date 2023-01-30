@@ -40,7 +40,7 @@ const NavbarLinkContainer = styled.div`
 `;
 const NavbarLink = styled(NavLink)`
   color: ${({ theme }) => theme.color};
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-family: ${({ theme }) => theme.headerFont};
   text-decoration: none;
   margin: 2rem;
@@ -48,7 +48,7 @@ const NavbarLink = styled(NavLink)`
     color: black;
     transition: ${({ theme }) => theme.transitionTime};
   }
-  @media (max-width: 850px){
+  @media (max-width: 900px){
     margin: 1rem;
   }
   @media (max-width: 648px){
