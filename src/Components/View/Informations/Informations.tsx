@@ -6,12 +6,22 @@ const Container = styled.div`
   flex-direction: row;
   justify-content: space-between;
   text-align: center;
+  @media (max-width: 648px){
+    flex-direction: column;
+  }
 `;
 const Boxes = styled.div`
   position: relative;
   flex-basis: 48%;
   border-radius: 8rem;
   background-color: ${({ theme }) => theme.mainColor};
+  @media (max-width: 900px){
+    border-radius: 4rem;
+  }
+  @media (max-width: 648px){
+    border-radius: 3rem;
+    margin-bottom: 2rem;
+  }
 `;
 const Title = styled.h3`
   font-family: ${({ theme }) => theme.headerFont};
@@ -23,22 +33,22 @@ const List = styled.ul`
   justify-content: center;
   flex-wrap: wrap;
   font-family: ${({ theme }) => theme.textFontSansserif};
+  margin: auto;
+  padding: 0rem;
 `;
 const Line = styled.div`
   list-style: none;
   justify-content: center;
-  padding: 0.7rem;
+  padding: 1rem;
   font-family: ${({ theme }) => theme.textFontSansserif};
-
 `;
 
+
 interface Props {
-  text: string
+  text: string;
 }
 
-const Informations: React.FC<Props> = ({text}) => {
-
-
+const Informations: React.FC<Props> = ({ text }) => {
   return (
     <Container>
       <Boxes>

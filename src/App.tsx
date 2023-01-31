@@ -29,6 +29,11 @@ const MainContainer = styled.div`
   box-shadow: ${({ theme }) => theme.boxShadowAll};
   padding: 1rem 3rem 3rem 3rem;
   border-radius: 0 0 2rem 2rem;
+  @media (max-width: 850px){
+    box-shadow: none;
+    padding: 1rem;
+    margin: 0;
+  }
 `;
 
 // const Container = styled.div`

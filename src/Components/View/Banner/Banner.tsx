@@ -7,6 +7,12 @@ const Container = styled.div`
   /* padding: 2rem 0 2rem 0; */
   border-radius: 8rem;
   box-shadow: ${({ theme }) => theme.boxShadowAll};
+  @media (max-width: 900px){
+    border-radius: 4rem;
+  }
+  @media (max-width: 648px){
+    border-radius: 2rem;
+  }
 `;
 const Title = styled.h1`
   font-size: 2rem;
