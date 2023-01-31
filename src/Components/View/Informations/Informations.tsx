@@ -30,13 +30,16 @@ const List = styled.ul`
   justify-content: center;
   flex-wrap: wrap;
   font-family: ${({ theme }) => theme.textFontSansserif};
+  margin: auto;
+  padding: 0rem;
 `;
 const Line = styled.div`
   list-style: none;
   justify-content: center;
-  padding: 0.7rem;
+  padding: 1rem;
   font-family: ${({ theme }) => theme.textFontSansserif};
 `;
+
 
 interface Props {
   text: string;

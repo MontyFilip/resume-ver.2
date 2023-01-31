@@ -22,6 +22,9 @@ const LeftContainer = styled.div`
   display: flex;
   align-items: center;
   /* padding-left: 5%; */
+  @media (max-width: 648px){
+    
+  }
 `;
 
 const RightContainer = styled.div`
@@ -29,6 +32,7 @@ const RightContainer = styled.div`
   display: flex;
   align-items: center;
   /* padding-left: 5%; */
+  @media 
 `;
 const NavabrInnerContainer = styled.div`
   width: 100%;
@@ -49,11 +53,12 @@ const NavbarLink = styled(NavLink)`
     transition: ${({ theme }) => theme.transitionTime};
   }
   @media (max-width: 900px){
+    font-size: 2rem;
     margin: 1rem;
   }
   @media (max-width: 648px){
     font-size: 1.8rem;
-    margin: 0.5rem;
+    margin: 0.3rem;
   }
 `;
 
@@ -63,6 +68,7 @@ const NavbarLogoLink = styled(NavLink)`
   font-family: ${({ theme }) => theme.logoFont};
   text-decoration: none;
   margin: 3rem;
+  text-align: center;
   &:hover {
     color: black;
     transition: ${({ theme }) => theme.transitionTime};
@@ -74,6 +80,9 @@ const NavbarLogoLink = styled(NavLink)`
   @media (max-width: 648px){
     font-size: 2.3rem;
     margin: 1rem;
+  }
+  @media (max-width: 480px){
+    font-size: 2rem;
   }
 `;
 

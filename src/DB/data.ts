@@ -20,17 +20,17 @@ export const ContactData = {
 };
 
 export const MyProjects = [
-  {
-    title: '24farmer.eu',
-    shortDescription: 'Application for farm management',
-    image: 'photo.png',
-    ghLink: 'https://github.com/MontyFilip/24farmer.eu',
-  },
-  {
-    title: 'Training application',
-    shortDescription: 'Generic application for companies to preapre courses for employees [H&S, Instructions]',
-    image: 'photo2.png',
-  },
+  // {
+  //   title: '24farmer.eu',
+  //   shortDescription: 'Application for farm management',
+  //   image: 'photo.png',
+  //   ghLink: 'https://github.com/MontyFilip/24farmer.eu',
+  // },
+  // {
+  //   title: 'Training application',
+  //   shortDescription: 'Generic application for companies to preapre courses for employees [H&S, Instructions]',
+  //   image: 'photo2.png',
+  // },
   {
     title: 'Password generator - console',
     shortDescription: "I'm working about web password generator",
