@@ -40,7 +40,7 @@ export const MyProjects = [
   {
     title: 'Personalize software to data analyze',
     shortDescription: 'We can prepare personalize software to your company. ',
-    image: 'photo.png',
+    image: 'csv_analyzer.png',
   },
 ];
 

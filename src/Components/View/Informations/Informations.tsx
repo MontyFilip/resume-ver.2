@@ -15,6 +15,9 @@ const Boxes = styled.div`
   flex-basis: 48%;
   border-radius: 8rem;
   background-color: ${({ theme }) => theme.mainColor};
+  @media (max-width: 900px){
+    border-radius: 4rem;
+  }
   @media (max-width: 648px){
     border-radius: 3rem;
     margin-bottom: 2rem;

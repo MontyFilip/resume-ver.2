@@ -32,7 +32,9 @@ const RightContainer = styled.div`
   display: flex;
   align-items: center;
   /* padding-left: 5%; */
-  @media 
+  @media (max-width: 648px){
+    
+  }
 `;
 const NavabrInnerContainer = styled.div`
   width: 100%;
