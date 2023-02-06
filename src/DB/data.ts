@@ -1,6 +1,7 @@
 export const Technologies = [
   'HTML',
   'CSS(styled-components)',
+  'RWD',
   'ReactJS',
   'TypeScript/JavaScript',
   'Python',
@@ -53,9 +54,11 @@ export const PersonalInformation = [
   {
     type: 'list',
     title: 'My Hobby',
-    // description = [
-    //   'Games',
-    //   'IT'
-    // ]
+    description:[
+      'Games',
+      'IT',
+      'Code',
+      'Databases'
+    ]
   },
 ];

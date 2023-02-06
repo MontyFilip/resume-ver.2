@@ -2,7 +2,12 @@ import React from 'react';
 import './App.css';
 import Navbar from './Components/View/Navbar/Navbar';
 import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from 'react-router-dom';
 import { dark } from './Theme/Theme';
 import Home from './Components/Page/Home/Home';
 import ErrorPage from './Components/Page/Error/ErrorPage';
@@ -29,7 +34,7 @@ const MainContainer = styled.div`
   box-shadow: ${({ theme }) => theme.boxShadowAll};
   padding: 1rem 3rem 3rem 3rem;
   border-radius: 0 0 2rem 2rem;
-  @media (max-width: 850px){
+  @media (max-width: 850px) {
     box-shadow: none;
     padding: 1rem;
     margin: 0;
@@ -53,7 +58,7 @@ const App = () => {
             {/* <Route path="/projects" element={<InBuild />} /> */}
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="*" element={<ErrorPage />} />
+            <Route path="/*" element={<ErrorPage />} />
           </Routes>
         </Router>
       </MainContainer>

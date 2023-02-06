@@ -13,9 +13,7 @@ const Box = styled.a`
   border-radius: 3rem;
   /* cursor: pointer; */
   @media (max-width: 850px){
-    flex-basis: auto;
-  }
-  @media (max-width: 648px){
+    width: 95%;
     flex-basis: auto;
   }
 `;
@@ -43,8 +41,6 @@ const Text = styled.p`
   font-size: 1.2rem;
   /* padding: 0 1rem 1rem 1rem; */
   @media (max-width: 648px){
-  font-size: 1rem;
-  margin: 0.2rem;
   display: none;
   }
 `;

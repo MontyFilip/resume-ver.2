@@ -63,6 +63,25 @@ const NavbarLink = styled(NavLink)`
     margin: 0.3rem;
   }
 `;
+const ActiveNavbarLink = styled(NavLink)`
+  color: ${({ theme }) => theme.mainColor};
+  font-size: 2.5rem;
+  font-family: ${({ theme }) => theme.headerFont};
+  text-decoration: none;
+  margin: 2rem;
+  &:hover {
+    color: black;
+    transition: ${({ theme }) => theme.transitionTime};
+  }
+  @media (max-width: 900px){
+    font-size: 2rem;
+    margin: 1rem;
+  }
+  @media (max-width: 648px){
+    font-size: 1.8rem;
+    margin: 0.3rem;
+  }
+`;
 
 const NavbarLogoLink = styled(NavLink)`
   color: ${({ theme }) => theme.mainColor};
@@ -87,8 +106,8 @@ const NavbarLogoLink = styled(NavLink)`
     font-size: 2rem;
   }
 `;
-
-const NavabrExtendedContainer = styled.div``;
+// try to implement active styles on navbar. 
+// const NavabrExtendedContainer = styled.div``;
 const Navbar: React.FC = () => {
   return (
     <NavContainer>
@@ -105,7 +124,7 @@ const Navbar: React.FC = () => {
           <NavbarLogoLink to="/">Filip Lysiak</NavbarLogoLink>
         </RightContainer>
       </NavabrInnerContainer>
-      <NavabrExtendedContainer></NavabrExtendedContainer>
+      {/* <NavabrExtendedContainer></NavabrExtendedContainer> */}
     </NavContainer>
   );
 };
