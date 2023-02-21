@@ -3,7 +3,7 @@ import Hero from '../../View/Banner/Banner';
 import { Box } from '../Home/Home';
 import { ContactData } from '../../../DB/data';
 
-const Contact = () => {
+const Contact: React.FC = () => {
   return (
     <Box>
       <Hero

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-// test 
+// test
 const Container = styled.div`
   background-color: ${({ theme }) => theme.mainColor};
   text-align: center;
@@ -7,10 +7,10 @@ const Container = styled.div`
   /* padding: 2rem 0 2rem 0; */
   border-radius: 8rem;
   box-shadow: ${({ theme }) => theme.boxShadowAll};
-  @media (max-width: 900px){
+  @media (max-width: 900px) {
     border-radius: 4rem;
   }
-  @media (max-width: 648px){
+  @media (max-width: 648px) {
     border-radius: 2rem;
   }
 `;
@@ -25,13 +25,13 @@ const Text = styled.p`
   font-family: ${({ theme }) => theme.textFontSansserif};
 `;
 
-interface Props {
+interface IHero {
   title: string;
   text: string;
   text2?: string;
   text3?: string;
 }
-const Hero: React.FC<Props> = ({ title, text, text2, text3 }) => {
+const Hero: React.FC<IHero> = ({ title, text, text2, text3 }) => {
   return (
     <Container>
       <Title>{title}</Title>

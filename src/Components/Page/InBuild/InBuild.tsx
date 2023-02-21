@@ -6,10 +6,14 @@ const Container = styled.div`
   font-size: 3rem;
   font-style: italic;
 `;
-const InBuild = () => {
+
+const Text: string = 'Website are under construction'
+
+
+const InBuild: React.FC = () => {
   return (
     <Container>
-      <PageTitle>Website are under construction</PageTitle>
+      <PageTitle>{Text}</PageTitle>
     </Container>
   );
 };

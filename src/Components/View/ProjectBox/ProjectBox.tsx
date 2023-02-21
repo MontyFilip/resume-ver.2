@@ -45,14 +45,14 @@ const Text = styled.p`
   }
 `;
 
-interface Props {
+interface IProjectBox {
   title: string;
   shortDescription: string;
   image: string;
   ghLink?: string;
 }
 
-const ProjectBox: React.FC<Props> = ({
+const ProjectBox: React.FC<IProjectBox> = ({
   title,
   shortDescription,
   image,

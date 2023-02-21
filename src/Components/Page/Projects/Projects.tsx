@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { MyProjects } from '../../../DB/data';
 import ProjectBox from '../../View/ProjectBox/ProjectBox';
 
-
 const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -14,9 +13,18 @@ const Container = styled.div`
 `;
 
 const Projects: React.FC = () => {
-  return <Container>
-    {MyProjects.map(project => (<ProjectBox title={project.title} shortDescription={project.shortDescription} image={project.image} ghLink={project.ghLink}/>))}
-  </Container>;
+  return (
+    <Container>
+      {MyProjects.map((project) => (
+        <ProjectBox
+          title={project.title}
+          shortDescription={project.shortDescription}
+          image={project.image}
+          ghLink={project.ghLink}
+        />
+      ))}
+    </Container>
+  );
 };
 
 export default Projects;
