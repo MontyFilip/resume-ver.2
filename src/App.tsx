@@ -1,12 +1,12 @@
 import React from 'react';
-import './App.css';
+// import './App.css';
 import Navbar from './Components/View/Navbar/Navbar';
 import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
 import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Navigate,
+  // Navigate,
 } from 'react-router-dom';
 import { dark } from './Theme/Theme';
 import Home from './Components/Page/Home/Home';

@@ -43,6 +43,12 @@ export const MyProjects = [
     shortDescription: 'We can prepare personalize software to your company. ',
     image: 'csv_analyzer.png',
   },
+  {
+    title: 'Password generator',
+    shortDescription: 'Web page to generate random safe password',
+    image: 'pass_gen.png',
+    ghLink: 'http://password-generator.filiplysiak.com',
+  },
 ];
 
 export const PersonalInformation = [
@@ -54,11 +60,6 @@ export const PersonalInformation = [
   {
     type: 'list',
     title: 'My Hobby',
-    description:[
-      'Games',
-      'IT',
-      'Code',
-      'Databases'
-    ]
+    description: ['Games', 'IT', 'Code', 'Databases'],
   },
 ];
